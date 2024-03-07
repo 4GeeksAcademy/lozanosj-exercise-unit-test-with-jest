@@ -16,10 +16,7 @@ let oneEuroIs = {
 const fromDollarToYen = (moneyIn) =>{
     
     return (moneyIn / oneEuroIs.USD) * oneEuroIs.JPY 
-    
-    
-    
-    
+      
 }
 
 const fromEuroToDollar = (moneyIn) => {
@@ -32,11 +29,6 @@ const fromYenToPound = (moneyIn) =>{
      
 }
 
-
-
-
-
-
 // cajero1 XUSD / 1.07USD  = XEUR * 156.5 = XJPY
 
 // cajero2 XEUR * 1.07$ = XUSD
@@ -44,5 +36,7 @@ const fromYenToPound = (moneyIn) =>{
 // cajero3 XJPY / 156.5JPY = XEUR * 0.87GBP = XGBP
 
 console.log(fromYenToPound(156.5));
+console.log(fromDollarToYen(1.07));
+console.log(fromEuroToDollar(1));
 
-module.exports = { fromDollarToYen, fromEuroToDollar, fromYenToPound };
+module.exports = { sum, fromDollarToYen, fromEuroToDollar, fromYenToPound };
